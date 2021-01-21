@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Greeting to the world</title>
+</head>
+<body>
+<p>Hello World.<b />
+<form action="" method="post"><!-- the action specifies the form's target -->
+<fieldset>
+<legend>Customer Information</legend>
+<p>Name: <input type="text" name="name" /><br />
+Address: <input type="text" name="address" /><br />
+City: <input type="text" name="city" /><br />
+Province/State: <select name="province">
+<optgroup label="Canada"><!-- optgroup is optional -->
+<option>British Columbia</option>
+<option>Ontario</option>
+<option>Quebec</option>
+</optgroup>
+<optgroup label="USA">
+<option value="CA">California</option>
+<option value="FL">Florida</option>
+<option value="NY">New York</option>
+</optgroup>
+</select><br />
+<!-- Radio buttons with the same name attribute work together as a group -->
+Country: <input type="radio" name="country" value="Canada" />Canada
+<input type="radio" name="country" value="USA" />USA<br />
+Postal: <input type="text" name="postal" /><br />
+<input type="submit" name="submit" value="Submit" /><!-- The value is the text on the submit button -->
+<input type="hidden" name="customerno" value="123456" /><!-- hidden inputs are not visible in the browser -->
+</p>
+</fieldset>
+</form>
+</body>
+</html>
